@@ -8,3 +8,20 @@ div{
     border-color: blue;
 }
  */
+
+/* classe progress bar */
+.a {
+    width: 40%;
+}
+.testblur{
+    color: aliceblue;
+    backdrop-filter: hue-rotate(45°) ;
+}
+.testblur :hover{
+
+    color: black;
+    
+}
+.rounded-circle{
+    backdrop-filter: hue-rotate(45°) ;
+}

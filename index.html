@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,9 +61,11 @@
               contacter!</h2>
             <a href="#expertise" class="btn btn-primary mt-5">Mon expertise web</a>
           </div>
-          <div class="col-12 col-md-6">
-            <img src="images/fdp.jpg" alt="Maxime Pégourié" width="100%">
+          <div class="col-12 col-md-6 testblur">
+            <img src="images/fdp.jpg" alt="Maxime Pégourié" class="rounded-circle "  width="100%">
+            <div class="col-12 col-md-6  testblur">maxime</div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -86,7 +89,7 @@
                 </div>
                 <div class="col">
                   <div class="progress">
-                    <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                    <div class="progress-bar  a " role="progressbar" aria-valuenow="75" aria-valuemin="0"
                       aria-valuemax="100"> <!--!!! travaux  !!!-->
                     </div>
                   </div>
@@ -172,7 +175,7 @@
 
           </div>
           <div class="col-12 offset-md-1 col-md-4">
-            <img src="images/code.jpg" alt="écran montrant du code php" width="100%">
+            <img src="images/code.jpg" alt="écran montrant du code php" class="rounded-3"   width="100%">
           </div>
         </div>
 
@@ -291,7 +294,7 @@ Partie porfolio et card + offcanvas c'est classe !
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card">
                           <!-- des que je met plusieur card dans le meme row elle se mette en colonne align-item ne fonctionne pas sur le parent ni sur les enfants ( ce qui serait chelou)  pour l'instant je laisse une card mais il va falloir vite trouver un solution pour quand je vais vouloir alimente la page ...-->
-              <img src="images/commingsoon.jpg" class="card-img-top" alt=" panneau avec commng soon ecris dessus ">
+              <img src="images/commingsoon.jpg" class="card-img-top" alt=" panneau avec coming soon ecris dessus ">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Projet1</h5>
                 <p class="card-text fw-light">Coming soon</p>
@@ -308,9 +311,9 @@ Partie porfolio et card + offcanvas c'est classe !
                     <div id="CarouselProjet1" class="carousel slide">
                       <div class="carousel-inner">
                         <div class="carousel-item h-100 active" data-bs-interval="4000">
-                          <img src="images/commingsoon.jpg" class="d-block w-100" alt="slide 1 "><!-- porbleme dim img -->
+                          <img src="images/commingsoon.jpg" class="img-fluid d-block w-100 " alt="slide 1 "><!-- porbleme dim img    modifier le h-100 et w-100 ne fonctionne ni sur le parent ni sur la div -->
                           <div class="carousel-caption d-none d-md-block"> 
-                            <h5>Commng soon </h5>
+                            <h5>Coming soon </h5>
                             <p class="fw-bolder">Ca va bientot arriver mon gars ! </p>
                           </div>
                         </div>
@@ -345,12 +348,12 @@ Partie porfolio et card + offcanvas c'est classe !
         </div>
     </section>
     <!-- formulaire de contact -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-light ">
       <div class="container">
         <h2 class="mb-0">Un projet de création web ?</h2>
         <h3 class="fw-light fs-5">Prenons rendez-vous dès que possible</h3>
 
-        <div class="row gy-3 mt-4">
+        <div class="row gy-3 py-4 mt-4 ">
           <div class="col-12 col-md-5">
             <img src="images/grab-a-coffee.jpg" alt="Image d'une tasse de café" width="100%">
           </div>
@@ -382,15 +385,17 @@ Partie porfolio et card + offcanvas c'est classe !
     </section>
 
   </main>
-  <footer class="border-top ">
+  <footer class="border-top fixed-bottom">
     <div class="container py-3 bg-light ">
       <div class="row gy-4 align-items-center">
         <div class="col-12 col-md-4">
           <a class="navbar-brand text-dark text-uppercase fw-bold " href="#expertise"><!-- faut il renvoyer vers autre part ? -->
             <span class="bg-primary bg-gradient p-1 rounded-3 text-light">M</span> Pégourié
           </a>
-        </div>
+        </div>    
         <div class="col-12 col-md-4 text-md-center">
+
+          <!--  MODAL !!  -->
           <ul class="list-unstyled mb-0">
             <li>
               <a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#Mlegit">Mentions légales</a>
